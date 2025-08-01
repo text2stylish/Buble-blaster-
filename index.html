@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Bubble Shooter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-header">
+            <h1>NEON BUBBLE SHOOTER</h1>
+            <div class="game-info">
+                <div class="score">Score: <span id="score">0</span></div>
+                <div class="level">Level: <span id="level">1</span></div>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div class="controls">
+            <button id="restartBtn" class="neon-btn">RESTART</button>
+            <div class="aim-controls">
+                <button id="leftBtn" class="neon-btn">←</button>
+                <button id="shootBtn" class="neon-btn shoot">SHOOT</button>
+                <button id="rightBtn" class="neon-btn">→</button>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-controls">
+        <div class="joystick-area" id="joystickArea"></div>
+        <div class="shoot-area" id="shootArea"></div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
